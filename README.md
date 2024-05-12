@@ -1,9 +1,12 @@
-# coke 3d App
-This is a 3D coke can model created using Blender and Three.js. The model is rendered in a web page using Three.js. The model can be rotated and zoomed in/out using the mouse. The model can also be viewed in VR mode using a VR headset.
+# Web 3D Model Viewer using X3D and React
+
+This project is a simple web 3D model viewer using X3D and React. The project uses the `react-x3d` library to render the
+3D model in the web page. The 3D model is a Coca-Cola can model which can be rotated and zoomed in/out using the mouse.
 
 # Project Structure
+
 ```
-my-coca-cola-brand/
+mvc-3d-web-application/
   |- src/
       |- components/
           |- Header.js
@@ -12,13 +15,13 @@ my-coca-cola-brand/
           |- Viewer.js
       |- assets/
           |- models/
-              |- object1.x3d
-              |- object2.x3d
-              |- object3.x3d
+              |- Coca-Cola.x3d
+              |- Sprite.x3d
+              |- Dr-Pepper.x3d
           |- textures/
-              |- texture1.jpg
-              |- texture2.jpg
-              |- texture3.jpg
+              |- Coca-Cola.jpg
+              |- Sprite.jpg
+              |- Dr-Pepper.jpg
       |- App.js
       |- index.js
   |- public/
