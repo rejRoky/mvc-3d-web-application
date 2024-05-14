@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../application/css/bootstrap.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/css/bootstrap.css" crossorigin="anonymous">
 
     <!-- X3DOM.css -->
-    <link rel="stylesheet" type="text/css" href="../application/css/x3dom.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/x3dom.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../application/css/custom.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/css/custom.css" crossorigin="anonymous">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
 
     <!-- fancyBox3 -->
-    <link rel="stylesheet" type="text/css" href="../application/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/jquery.fancybox.min.css">
 
     <title>Web 3D Applications</title>
 </head>
@@ -57,9 +57,9 @@
                 </ul>
             </div>
             <div class="card-body">
-                <img class="small-img" src="../application/assets/images/gallery_images/Coke.png" alt="Coke" onclick="cokeScene(); cokeDescription();" data-toggle="popover" data-trigger="hover" title="Coke">
-                <img class="small-img" src="../application/assets/images/gallery_images/Sprite.png" alt="Sprite" onclick="spriteScene(); spriteDescription();" data-toggle="popover" data-trigger="hover" title="Sprite">
-                <img class="small-img" src="../application/assets/images/gallery_images/Dr Pepper.png" alt="Dr Pepper" onclick="pepperScene(); pepperDescription();" data-toggle="popover" data-trigger="hover" title="Dr Pepper">
+                <img class="small-img" src="../public/assets/images/gallery_images/Coke.png" alt="Coke" onclick="cokeScene(); cokeDescription();" data-toggle="popover" data-trigger="hover" title="Coke">
+                <img class="small-img" src="../public/assets/images/gallery_images/Sprite.png" alt="Sprite" onclick="spriteScene(); spriteDescription();" data-toggle="popover" data-trigger="hover" title="Sprite">
+                <img class="small-img" src="../public/assets/images/gallery_images/Dr Pepper.png" alt="Dr Pepper" onclick="pepperScene(); pepperDescription();" data-toggle="popover" data-trigger="hover" title="Dr Pepper">
             </div>
         </div>
 
@@ -72,13 +72,13 @@
                             <scene>
                                 <Switch whichChoice="0" id="SceneSwitch">
                                     <transform>
-                                        <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="../application/assets/x3d/coke.x3d"></inline>
+                                        <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="../public/assets/x3d/coke.x3d"></inline>
                                     </transform>
                                     <transform>
-                                        <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="../application/assets/x3d/sprite.x3d"></inline>
+                                        <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="../public/assets/x3d/sprite.x3d"></inline>
                                     </transform>
                                     <transform>
-                                        <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="../application/assets/x3d/pepper_animation.x3d"></inline>
+                                        <inline nameSpaceName="model" mapDEFToID="true" onclick="animateModel();" url="../public/assets/x3d/pepper_animation.x3d"></inline>
                                     </transform>
                                 </Switch>
                             </scene>
@@ -194,17 +194,17 @@
 </nav>
 
 <!-- JavaScript -->
-<script src="../application/js/jquery-3.2.1.js" crossorigin="anonymous"></script>
-<script src="../application/js/popper.min.js" crossorigin="anonymous"></script>
-<script src="../application/js/bootstrap.min.js" crossorigin="anonymous"></script>
-<script src="../application/js/fontawesome-all.min.js"></script>
-<script src="../application/js/custom.js" crossorigin="anonymous"></script>
-<script src="../application/js/swap_restyle.js"></script>
-<script src="../application/js/x3dom-1.7.2/x3dom.js"></script>
-<script src="../application/js/gallery_generator.js"></script>
-<script src="../application/js/getJsonData.js"></script>
-<script src="../application/js/modelInteractions.js"></script>
-<script src="../application/js/jquery.fancybox.min.js"></script>
+<script src="../public/js/jquery-3.2.1.js" crossorigin="anonymous"></script>
+<script src="../public/js/popper.min.js" crossorigin="anonymous"></script>
+<script src="../public/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="../public/js/fontawesome-all.min.js"></script>
+<script src="../public/js/custom.js" crossorigin="anonymous"></script>
+<script src="../public/js/swap_restyle.js"></script>
+<script src="../public/js/x3dom-1.7.2/x3dom.js"></script>
+<script src="../public/js/gallery_generator.js"></script>
+<script src="../public/js/getJsonData.js"></script>
+<script src="../public/js/modelInteractions.js"></script>
+<script src="../public/js/jquery.fancybox.min.js"></script>
 </body>
 
 </html>
