@@ -202,7 +202,6 @@
 <script src="../public/js/swap_restyle.js"></script>
 <script src="../public/js/x3dom-1.7.2/x3dom.js"></script>
 <script src="../public/js/gallery_generator.js"></script>
-<!-- <script src="../public/js/getJsonData.js"></script> -->
 <script src="../public/js/modelInteractions.js"></script>
 <script src="../public/js/jquery.fancybox.min.js"></script>
 </body>
