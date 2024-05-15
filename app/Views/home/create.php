@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Item</title>
+    <title>Create Model</title>
 </head>
 <body>
-    <h1>Create Item</h1>
+    <h1>Create Model</h1>
     <form action="/home/create" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name">
@@ -14,6 +14,6 @@
         <textarea id="description" name="description"></textarea>
         <button type="submit">Create</button>
     </form>
-    <a href="/">Back to Items</a>
+    <a href="/">Back to Models</a>
 </body>
 </html>

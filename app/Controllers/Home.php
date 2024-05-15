@@ -2,15 +2,15 @@
 
 class Home extends Controller {
     public function index() {
-        $itemModel = $this->model('Item');
-        $items = $itemModel->getAllItems();
-        $this->view('home/index', ['items' => $items]);
+        $modelModel = $this->model('Model');
+        $models = $modelModel->getAllModels();
+        $this->view('home/index', ['models' => $models]);
     }
 
     public function show($id) {
-        $itemModel = $this->model('Item');
-        $item = $itemModel->getItemById($id);
-        $this->view('home/show', ['item' => $item]);
+        $modelModel = $this->model('Model');
+        $model = $modelModel->getModelById($id);
+        $this->view('home/show', ['model' => $model]);
     }
 
     public function create() {
@@ -19,8 +19,8 @@ class Home extends Controller {
                 'name' => $_POST['name'],
                 'description' => $_POST['description']
             ];
-            $itemModel = $this->model('Item');
-            $itemModel->createItem($data);
+            $modelModel = $this->model('Model');
+            $modelModel->createModel($data);
             header('Location: /');
         } else {
             $this->view('home/create');
@@ -28,24 +28,24 @@ class Home extends Controller {
     }
 
     public function edit($id) {
-        $itemModel = $this->model('Item');
-        $item = $itemModel->getItemById($id);
+        $modelModel = $this->model('Model');
+        $model = $modelModel->getModelById($id);
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $data = [
                 'name' => $_POST['name'],
                 'description' => $_POST['description']
             ];
-            $itemModel->updateItem($id, $data);
+            $modelModel->updateModel($id, $data);
             header('Location: /');
         } else {
-            $this->view('home/edit', ['item' => $item]);
+            $this->view('home/edit', ['model' => $model]);
         }
     }
 
     public function delete($id) {
-        $itemModel = $this->model('Item');
-        $itemModel->deleteItem($id);
+        $modelModel = $this->model('Model');
+        $modelModel->deleteModel($id);
         header('Location: /');
     }
 }
