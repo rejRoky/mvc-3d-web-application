@@ -1,6 +1,6 @@
 <?php
-define('DB_HOST', 'mysql');
-define('DB_NAME', 'mvc_project');
-define('DB_USER', 'root');
+
+define('DB_HOST', 'db');
+define('DB_USER', 'user');
 define('DB_PASS', 'password');
-?>
+define('DB_NAME', 'my_database');
