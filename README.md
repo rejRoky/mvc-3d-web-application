@@ -13,7 +13,7 @@ mvc_3d_app/
 │   ├── Controllers/
 │   │   └── Home.php
 │   ├── Models/
-│   │   └── Item.php
+│   │   └── Model.php
 │   ├── Views/
 │   │   ├── home/
 │   │   │   ├── create.php
@@ -45,14 +45,14 @@ mvc_3d_app/
 ### Installation
 
 1. Clone the repository
-2. Run `docker-compose up` to start the application
-3. Open a web browser and navigate to `http://localhost:8080`
-4. You should see the home page of the application
-5. You can now view 3D models and interact with them using the mouse and keyboard
-6. To stop the application, run `docker-compose down`
-7. To start the application again, run `docker-compose up`
-8. To remove the application, run `docker-compose down --volumes`
-9. To access the application files, go to the `public` directory
+2. Install [Docker](https://www.docker.com/)
+3. Install [Docker Compose](https://docs.docker.com/compose/install/)
+4. Run `docker-compose up` to start the application
+5. Open a web browser and navigate to `http://localhost:8080`
+6. You should see the home page of the application
+7. You can now view 3D models and interact with them using the mouse and keyboard
+8. To stop the application, run `docker-compose down`
+9. To start the application again, run `docker-compose up`
 10. To access the application database, go to `http://localhost:8080/phpmyadmin`
 
 ### Usage
