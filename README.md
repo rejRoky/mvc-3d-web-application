@@ -8,23 +8,38 @@ JavaScript, Php, and X3DOM.
 ### Application Architecture
 
 ```
-project/
+mvc_3d_app/
 ├── app/
-│   ├── controllers/
-│   │   └── HomeController.php
-│   ├── models/
-│   │   └── UserModel.php
-│   └── views/
-│       └── home.php
-├── config/
-│   └── config.php
-├── docker/
-│   ├── php/
-│   │   └── Dockerfile
-│   └── docker-compose.yml
+│   ├── Controllers/
+│   │   └── Home.php
+│   ├── Models/
+│   │   └── Item.php
+│   ├── Views/
+│   │   ├── home/
+│   │   │   ├── create.php
+│   │   │   ├── edit.php
+│   │   │   ├── index.php
+│   │   │   └── show.php
+│   └── core/
+│       ├── App.php
+│       └── Controller.php
 ├── public/
 │   └── index.php
-└── docker-compose.yml
+│   └── public/
+│       ├── assets/
+│       │   ├── css/
+│       │   │   └── styles.css
+│       │   ├── fonts/
+│       │   ├── images/
+│       │   ├── models/
+│       │   └── scripts/
+│       │       └── scripts.js
+│       └── index.php
+├── config/
+│   ├── config.php
+│   └── apache2.conf
+├── docker-compose.yml
+└── Dockerfile
 ```
 
 ### Installation
